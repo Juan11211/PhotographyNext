@@ -20,19 +20,22 @@ function Slider({ slides }) {
   }
 
   return (
-    <div id='gallery'>
+    <div id='gallery' className='max-w-[1240px] mx-auto'>
       <h1 className='text-2xl font-bold text-center p-4'>Gallery</h1>
+      <div className='relative flex justify-center p-4'>
+
+        
       <>
         {SliderData.map((slide, index) => (
           <div
             key={index}
             className={
               index === current
-                ? 'opacity-[1] '
+                ? 'opacity-[1] ease-in duration-1000 '
                 : 'opacity-0'
             }
           >
-            <div className='relative flex justify-center p-4'>
+            
               <FaArrowCircleLeft
                 onClick={prevSlide}
                 size={50}
@@ -53,9 +56,10 @@ function Slider({ slides }) {
                 onClick={nextSlide}
               />
             </div>
-          </div>
+          
         ))}
       </>
+    </div>
     </div>
   );
 }
