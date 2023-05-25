@@ -21,7 +21,7 @@ function Slider({ slides }) {
 
   return (
     <div id='gallery'>
-      <h1>Gallery</h1>
+      <h1 className='text-2xl font-bold text-center p-4'>Gallery</h1>
       <>
         {SliderData.map((slide, index) => (
           <div
@@ -34,9 +34,9 @@ function Slider({ slides }) {
           >
             <div className='relative flex justify-center p-4'>
               <FaArrowCircleLeft
+                onClick={prevSlide}
                 size={50}
                 className='absolute top-[50%] text-white/70 left-[30px] cursor-pointer select-none z-[2]'
-                onClick={prevSlide}
               />
               {index === current && (
                 <Image
