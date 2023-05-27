@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { SliderData } from './SliderData';
+import { default as SliderData } from '../../data/SliderData';
 import Image from 'next/image';
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 
 function Slider({ slides }) {
   const [current, setCurrent] = useState(0);
-  const length = slides.length;
+  const length = slides?.length;
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);

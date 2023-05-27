@@ -1,7 +1,7 @@
 import Hero from './components/Hero';
 import Head from 'next/head';
 import Slider from './components/Slider';
-import { SliderData } from './components/SliderData';
+import { default as SliderData } from '../data/SliderData'
 import Instagram from './components/Instagram';
 
 export default function Home() {
