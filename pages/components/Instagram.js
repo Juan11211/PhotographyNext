@@ -1,11 +1,11 @@
 import React from 'react'
 import Instagramimg from './Instagramimg'
-import IgImg1 from '/Users/juanaviles/Desktop/photograph/public/ig-img-1.jpeg'
-import IgImg2 from '/Users/juanaviles/Desktop/photograph/public/ig-img-2.jpeg'
-import IgImg3 from '/Users/juanaviles/Desktop/photograph/public/ig-img-3.jpeg'
-import IgImg4 from '/Users/juanaviles/Desktop/photograph/public/ig-img-4.jpeg'
-import IgImg5 from '/Users/juanaviles/Desktop/photograph/public/ig-img-5.jpeg'
-import IgImg6 from '/Users/juanaviles/Desktop/photograph/public/ig-img-6.jpeg'
+import IgImg1 from '../../public/img1.jpeg'
+import IgImg2 from '../../public/img2.jpeg'
+import IgImg3 from '../../public/img3.jpeg'
+import IgImg4 from '../../public/img4.jpeg'
+import IgImg5 from '../../public/img5.jpeg'
+import IgImg6 from '../../public/img6.jpeg'
 
 function instagram() {
   return (
